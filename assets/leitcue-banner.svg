@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="520" viewBox="0 0 1280 520" role="img" aria-labelledby="title desc">
+  <title id="title">LeitCue 乐叙 · 让剧情，驱动音乐。</title>
+  <desc id="desc">AI 产品经理作品集。左侧为产品品牌与体验入口；右侧为剧情和音乐分层时间轴，轻微移动的播放线表示整集编排。图形为概念示意，不是真实分析结果。</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1"><stop stop-color="#15131d"/><stop offset="1" stop-color="#090d14"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#bd766c" stop-opacity=".15"/><stop offset="1" stop-color="#bd766c" stop-opacity="0"/></radialGradient>
+    <linearGradient id="brand" x2="1" y2="1"><stop stop-color="#fa708f"/><stop offset="1" stop-color="#ffb183"/></linearGradient>
+    <linearGradient id="track" x2="1"><stop stop-color="#874b56"/><stop offset="1" stop-color="#593443"/></linearGradient>
+    <linearGradient id="ambient" x2="1"><stop stop-color="#665080"/><stop offset="1" stop-color="#423951"/></linearGradient>
+    <pattern id="wave" width="18" height="70" patternUnits="userSpaceOnUse"><path d="M4 23v24M10 14v42M16 28v14" stroke="#ffd4cc" stroke-width="2" opacity=".45"/></pattern>
+    <pattern id="texture" width="14" height="70" patternUnits="userSpaceOnUse"><path d="M3 28v14M9 20v30" stroke="#ddd2ff" stroke-width="1.5" opacity=".35"/></pattern>
+    <clipPath id="round"><rect width="1280" height="520" rx="24"/></clipPath>
+  </defs>
+  <style>
+    text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Arial,sans-serif}
+    .mono{font-family:"SFMono-Regular",Consolas,monospace}
+    .playhead{animation:travel 11s ease-in-out infinite}
+    .beacon{animation:breathe 3.5s ease-in-out infinite}
+    @keyframes travel{0%,12%{transform:translateX(0)}76%,88%{transform:translateX(344px)}100%{transform:translateX(0)}}
+    @keyframes breathe{0%,100%{opacity:.5}50%{opacity:1}}
+    @media(prefers-reduced-motion:reduce){.playhead,.beacon{animation:none}}
+  </style>
+  <g clip-path="url(#round)">
+    <rect width="1280" height="520" fill="url(#background)"/>
+    <ellipse cx="570" cy="80" rx="550" ry="410" fill="url(#glow)"/>
+    <path d="M651 0v520" stroke="#6b5765" opacity=".2"/>
+    <rect x=".5" y=".5" width="1279" height="519" rx="24" fill="none" stroke="#3a303e"/>
+
+    <rect x="52" y="46" width="48" height="48" rx="14" fill="url(#brand)"/>
+    <g stroke="#fff" stroke-width="3.5" stroke-linecap="round"><path d="M64 69v11M72 60v20M80 55v25M88 65v15"/></g>
+    <text x="114" y="79" font-size="31" font-weight="750" fill="#faf4f6">LeitCue <tspan fill="#ad9eaf" font-size="20" font-weight="400">/ 乐叙</tspan></text>
+    <text x="54" y="146" font-size="12" letter-spacing="2.6" fill="#efa39d">AI PRODUCT MANAGEMENT · FEATURED PROJECT</text>
+    <text x="49" y="218" font-size="55" font-weight="700" letter-spacing="-1" fill="#fff4f3">让剧情，</text>
+    <text x="49" y="285" font-size="55" font-weight="700" letter-spacing="-1" fill="#fff4f3">驱动音乐。</text>
+    <text x="54" y="330" font-size="19" fill="#b4a6bb">从用户研究，到完整一集的配乐交付。</text>
+    <rect x="53" y="370" width="240" height="52" rx="26" fill="url(#brand)"/>
+    <text x="81" y="404" font-size="19" font-weight="650" fill="#26151f">体验交互 Demo</text>
+    <path d="M258 404l12-12m-12 0h12v12" fill="none" stroke="#26151f" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="55" y="474" font-size="13" letter-spacing="1" fill="#8c7c96">需求研究  /  模型评测  /  工作流设计  /  产品落地</text>
+
+    <rect x="693" y="46" width="535" height="394" rx="18" fill="#14151e" stroke="#34313f"/>
+    <circle cx="716" cy="70" r="4" fill="#ef9b91"/>
+    <circle cx="733" cy="70" r="4" fill="#ad98cb"/>
+    <circle cx="750" cy="70" r="4" fill="#768e93"/>
+    <text x="777" y="75" class="mono" font-size="11" letter-spacing="1.2" fill="#8f869f">STORY → SCORE / EPISODE 01</text>
+    <text x="722" y="120" font-size="19" font-weight="600" fill="#e2d9eb">不是每次切镜，都要换音乐。</text>
+    <text x="722" y="148" font-size="13" fill="#9b8ca8">让叙事保持连续，让真正的转变被听见。</text>
+
+    <g class="mono" font-size="10" fill="#7f718d"><text x="799" y="180">00:00</text><text x="936" y="180">00:15</text><text x="1080" y="180">00:30</text><text x="1165" y="180">00:45</text></g>
+    <g stroke="#302837"><path d="M800 189v168M942 189v168M1084 189v168M1198 189v168"/></g>
+    <text x="722" y="217" font-size="12" fill="#aca0b8">剧情节点</text>
+    <path d="M800 213h398" stroke="#564557" stroke-width="1.5"/>
+    <g fill="#191820" stroke="#ba8997" stroke-width="2"><circle cx="811" cy="213" r="5"/><circle cx="881" cy="213" r="5"/><circle cx="952" cy="213" r="5"/><circle cx="1027" cy="213" r="5"/></g>
+    <circle cx="1121" cy="213" r="7" fill="#ffb09d"/>
+    <path d="M1121 225v127" stroke="#ad827f" stroke-dasharray="3 5" opacity=".6"/>
+    <text x="1092" y="197" font-size="10" fill="#edb4a8">关系重置</text>
+
+    <text x="722" y="274" font-size="12" fill="#aca0b8">音乐编排</text>
+    <rect x="800" y="245" width="315" height="68" rx="7" fill="url(#track)"/>
+    <rect x="800" y="245" width="315" height="68" rx="7" fill="url(#wave)"/>
+    <rect x="1127" y="245" width="71" height="68" rx="7" fill="url(#ambient)"/>
+    <rect x="1127" y="245" width="71" height="68" rx="7" fill="url(#texture)"/>
+    <text x="813" y="304" font-size="10" fill="#ffd8d0">01 · 持续张力</text>
+    <text x="1137" y="304" font-size="10" fill="#e4d8f7">02 · 转变</text>
+    <text x="722" y="340" font-size="12" fill="#aca0b8">对白原音</text>
+    <rect x="800" y="328" width="398" height="18" rx="4" fill="#243c3c"/>
+    <path d="M810 337h25m8 0h39m9 0h64m10 0h31m13 0h54m10 0h34m9 0h61m8 0h13" stroke="#70a49b" stroke-width="2" stroke-linecap="round"/>
+    <g class="playhead"><path d="M811 185v173" stroke="#fbd6c6" stroke-width="1.5" opacity=".75"/><path d="M806 183h10l-5 6z" fill="#fbd6c6"/></g>
+    <path d="M721 377h478" stroke="#2b2734"/>
+    <circle cx="727" cy="403" r="4" fill="#b9d3c7" class="beacon"/>
+    <text x="740" y="408" font-size="12" fill="#b9d3c7">少量、必要的音乐变化</text>
+    <text x="1065" y="408" class="mono" font-size="10" fill="#82778f">CONCEPT PREVIEW</text>
+    <text x="699" y="474" font-size="13" fill="#8c7c96">原创图形示意 · 静态交互 Demo · 无模型调用</text>
+  </g>
+</svg>
